@@ -158,10 +158,12 @@ input.valid[type=tel]:not(.browser-default),
 input.valid[type=tel]:not(.browser-default):focus,
 input.valid[type=text]:not(.browser-default),
 input.valid[type=text]:not(.browser-default):focus,
-input.invalid[type=email]:not(.browser-default),
-input.invalid[type=email]:not(.browser-default):focus {
-    border-bottom: 1px solid rgb(255, 123, 226);
-    box-shadow: 0 1px 0 0 #ff7dc3;
+input.valid[type=email]:not(.browser-default),
+input.valid[type=email]:not(.browser-default):focus,
+textarea.materialize-textarea:focus:not([readonly]),
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid rgb(255, 148, 232);
+    box-shadow: 0 1px 0 0 #ff93cd;
 }
 
 
@@ -215,4 +217,98 @@ input.invalid[type=email]:not(.browser-default):focus {
         display: grid;
         text-align: center;
     }
+}
+
+/*------------------------------- FORM PAGE ----------------------------------*/
+.text-form {
+    text-align: center;
+}
+
+.title-form {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.subtitle-form {
+    font-size: 1.5rem;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-field {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100% !important;
+}
+
+.container-form {
+    width: 70%;
+}
+
+.btn-submit {
+    background-color: #fff;
+    border: 2px solid #ffbbdf;
+    width: 250px;
+    color: #ff9bd0;
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 17px;
+}
+
+.btn-submit:hover {
+    background-color: #ffbbdf;
+    border: 2px solid #ffbbdf;
+    width: 250px;
+    color: #ff75bf;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.btn-submit:focus {
+    background-color: rgb(255, 219, 239);
+}
+
+[type="checkbox"]:checked+span:not(.lever):before {
+    border-right: 2px solid #ff74d5;
+    border-bottom: 2px solid #ff74d5;
+}
+
+.dropdown-content li>a,
+.dropdown-content li>span {
+    color: rgb(255, 131, 191);
+}
+
+/*MODAL CONTACT*/
+.modal-content {
+    text-align: center;
+    margin-top: 2rem
+}
+
+.modal-footer {
+    margin-bottom: 20px;
+}
+
+.btn-flat {
+    background-color: #fdbcdf;
+    margin-right: 20px !important;
+    width: 120px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+}
+
+.title-modal-contact {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.subtitle-modal-contact {
+    font-size: 1rem;
+    margin-top: 20px;
 }

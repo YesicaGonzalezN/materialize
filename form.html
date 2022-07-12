@@ -48,75 +48,77 @@
         <img class="responsive-img" src="assets/images/coleccion.png">
     </div>
 
-    <!--CONTAINER ABOUT-->
-    <div id="about" class="container">
-        <div class="row container-about">
-            <div class="col s12 l6">
-                <h3 class="title-about">¡Conocenos!</h3>
-            </div>
-            <div class="col s12 l6 text-about">
-                <p>Somos Mica y Leo, una pareja llena de energía que siempre anda
-                    buscando
-                    nuevas maneras de aportar su granito de arena al mundo.</p>
-                <p>Por eso decidimos crear <span class="pink-text lighten-2-text">Juana's Bags</span>, una marca de
-                    marroquinería de diseño Cruelty Free.</p>
-                <p>Todos nuestros artículos los diseñamos y pensamos para otorgarles la mayor comodidad, con productos
-                    ecológicos y <span>100% de caracter Argentino</span>.</p>
-            </div>
-        </div>
+    <!-- CONTACT FORM JQUERY -->
+    <div class="text-form">
+        <h3 class="title-form">Escríbenos</h3>
+        <h4 class="subtitle-form">¡Nos encanta leer sus mensajes!</h4>
     </div>
-
-    <!--PARALLAX PRODUCT-->
-    <div id="product" class="parallax-container">
-        <div class="parallax"><img src="assets/images/coleccion1.png"></div>
-        <div class="title-slide">
-            <h2 class="title-carousel">Algunos de nuestros productos</h2>
-            <h3 class="subtitle-carousel">Colección Otoño/Invierno '22</h3>
-        </div>
-    </div>
-
-    <!--CONTAINER PRODUCT-->
     <div class="container">
-        <div class="slider">
-            <ul class="slides">
-                <li>
-                    <img src="assets/images/berlin.jpg">
-                    <div class="caption center-align">
-                        <h3>Bolso Berlín</h3>
-                        <h5 class="light grey-text text-lighten-3">Juana's Bags</h5>
+        <div class="row container-form">
+            <form id="form-contact" class="col s12">
+                <div class="row input-row">
+                    <div class="input-field col s8">
+                        <input placeholder="Nombre" id="nombre" type="text" name="nombre" class="validate">
+                        <label for="nombre"></label>
                     </div>
-                </li>
-                <li>
-                    <img src="assets/images/geriba.jpg">
-                    <div class="caption left-align">
-                        <h3>Mochila Geriba</h3>
-                        <h5 class="light grey-text text-lighten-3">Juana's Bags</h5>
+                </div>
+                <div class="row input-row">
+                    <div class="input-field col s8">
+                        <input placeholder="Email" id="email" type="email" name="email" class="validate">
+                        <label for="email"></label>
                     </div>
-                </li>
-                <li>
-                    <img src="assets/images/savage.jpg">
-                    <div class="caption right-align">
-                        <h3>Billetera Savage</h3>
-                        <h5 class="light grey-text text-lighten-3">Juana's Bags</h5>
+                </div>
+                <div class="row input-row">
+                    <div class="input-field col s8">
+                        <input placeholder="Teléfono" id="tel" type="tel" name="tel" class="validate">
+                        <label for="tel"></label>
                     </div>
-                </li>
-                <li>
-                    <img src="assets/images/bandolera.jpg">
-                    <div class="caption right-align">
-                        <h3>Bandolera Moscú</h3>
-                        <h5 class="light grey-text text-lighten-3">Juana's Bags</h5>
+                </div>
+                <div class="row input-row">
+                    <div class="input-field col s8">
+                        <select name="genero">
+                            <option value="genero" disabled selected>Género</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="no binario">No binario</option>
+                        </select>
                     </div>
-                </li>
-            </ul>
+                </div>
+                <div class="row input-row">
+                    <div class="input-field col s8">
+                        <textarea name="mensaje" placeholder="Escribe tu mensaje..." id="textarea1"
+                            class="materialize-textarea"></textarea>
+                        <label for="textarea1"></label>
+                    </div>
+                </div>
+                <div>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="check" />
+                            <span>Acepto los Términos & Condiciones.</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="center-align">
+                    <button id="btn-submit" class="btn waves-effect waves-light btn-submit modal-trigger" type="submit"
+                        name="action" href="#modal1">Enviar
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 
-    <!--CONTAINER CONTACT-->
-    <div class="container-contact center-align">
-        <h3 class="title-contact">Contáctanos</h3>
-        <p class="subtitle-contact">¡Nos encantan sus mensajes!</p>
-        <p class="mail-contact">juanasbagsoficial@gmail.com</p>
-        <a class="waves-effect waves-light btn btn-contact" href="form.html">CONTACTAR</a>
+    <!-- MODAL CONTACT -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4 class="title-modal-contact">¡Tu mensaje fue enviado!</h4>
+            <p class="subtitle-modal-contact">Gracias por escribirnos, apreciamos mucho sus mensajes. <i
+                    class="material-icons">favorite</i></p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+        </div>
     </div>
 
     <!-- FOOTER -->
@@ -129,7 +131,6 @@
                 <a class="icon-footer" href="https://www.instagram.com/juanasbagsoficial"><i
                         class="fa-brands fa-instagram"></i></a>
             </div>
-
             <ul class="container-links">
                 <li><a class="link-item-footer" href="/">Inicio</a></li>
                 <li><a class="link-item-footer" href="#about">Conocenos</a></li>
@@ -144,8 +145,11 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/form.js"></script>
 </body>
 
 </html>
