@@ -45,7 +45,7 @@ $('#btn-submit').click(function (e) {
         nameErrorMessage = "El campo nombre debe tener mas de 3 carácteres.";
         $('#nameError').html(nameErrorMessage);
     }
-    if (nombre) {
+    if (nombre > 3) {
         $('#nombreResult').text(`Tu nombre es: ${nombre}`);
     }
 
@@ -96,7 +96,7 @@ $('#btn-submit').click(function (e) {
     }
 
     if (tel.length < 5) {
-        telErrorMessage = "El campo nombre debe tener mas de 5 carácteres.";
+        telErrorMessage = "El campo teléfono debe tener mas de 5 carácteres.";
         $('#telError').html(telErrorMessage);
     }
 
