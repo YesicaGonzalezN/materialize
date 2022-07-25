@@ -45,7 +45,7 @@ $('#btn-submit').click(function (e) {
         nameErrorMessage = "El campo nombre debe tener mas de 3 carácteres.";
         $('#nameError').html(nameErrorMessage);
     }
-    if (nombre > 3) {
+    if (nombre.length >= 3) {
         $('#nombreResult').text(`Tu nombre es: ${nombre}`);
     }
 
