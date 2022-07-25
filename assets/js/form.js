@@ -196,4 +196,3 @@ $('#btn-submit').click(function (e) {
     let datos = $('#form-contact').serialize();
     console.log(datos);
 })
-

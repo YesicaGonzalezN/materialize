@@ -166,8 +166,6 @@ textarea.materialize-textarea:focus:not([readonly]),
     box-shadow: 0 1px 0 0 #ff93cd;
 }
 
-
-
 /*FOOTER*/
 .text-logo {
     font-size: 2rem;
@@ -287,8 +285,9 @@ textarea.materialize-textarea:focus:not([readonly]),
     font-size: 17px;
 }
 
-[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
-    background-color:#ff93cd;
+[type="radio"]:checked+span:after,
+[type="radio"].with-gap:checked+span:after {
+    background-color: #ff93cd;
     border: #ff7dc3;
 }
 
@@ -304,7 +303,7 @@ textarea.materialize-textarea:focus:not([readonly]),
 }
 
 .error {
-    color:rgb(255, 127, 193);
+    color: rgb(255, 127, 193);
     font-size: 12px;
 }
 
@@ -318,8 +317,3 @@ textarea.materialize-textarea:focus:not([readonly]),
     background-color: #ffc0e2;
     font-weight: 600;
 }
-
-
-
-
-
